@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@*page container*@
+    <header>
+        <h1 class="title"> Le mie pizze </h1>
+    </header>
+<div class="container">
+
+    @*title*@
+
+    @*pizza container*@
+    <div class="flex">
+
+        @*pizza cards*@
+        <div class="card">
+            <div class="w-100">
+                <img src="~/img/margherita.jpg">
+            </div>
+            <div class="card-description">
+                <h3 class="title"> Margherita </h3>
+                <p>Prezzo: 4,50€</p>
+                <p>Pizza classica italiana, semplice e squisita.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="w-100">
+                <img src="~/img/margherita.jpg">
+            </div>
+            <div class="card-description">
+                <h3 class="title"> Margherita </h3>
+                <p>Prezzo: 4,50€</p>
+                <p>Pizza classica italiana, semplice e squisita.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="w-100">
+                <img src="~/img/margherita.jpg">
+            </div>
+            <div class="card-description">
+                <h3 class="title"> Margherita </h3>
+                <p>Prezzo: 4,50€</p>
+                <p>Pizza classica italiana, semplice e squisita.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="w-100">
+                <img src="~/img/margherita.jpg">
+            </div>
+            <div class="card-description">
+                <h3 class="title"> Margherita </h3>
+                <p>Prezzo: 4,50€</p>
+                <p>Pizza classica italiana, semplice e squisita.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="w-100">
+                <img src="~/img/margherita.jpg">
+            </div>
+            <div class="card-description">
+                <h3 class="title"> Margherita </h3>
+                <p>Prezzo: 4,50€</p>
+                <p>Pizza classica italiana, semplice e squisita.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="w-100">
+                <img src="~/img/margherita.jpg">
+            </div>
+            <div class="card-description">
+                <h3 class="title"> Margherita </h3>
+                <p>Prezzo: 4,50€</p>
+                <p>Pizza classica italiana, semplice e squisita.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        background-color: lightgray;
+        height:45px;
+    }
+
+    .container{
+        width: 80%;
+        margin:auto;
+        min-height: calc(100vh - 45px);
+        padding: 20px 0;
+    }
+
+    .title{
+        text-align:center;
+        padding-bottom:10px;
+    }
+
+    .flex{
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card{
+        border: 1px solid black;
+        border-radius:8px;
+        flex-basis: 22%;
+        padding-bottom: 5px;
+    }
+
+    .card img{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        width: 100%;
+    }
+
+    .card-description{
+        padding: 0 5px;
+    }
+
+    .w-100{
+        width:100%;
+    }
+</style>
